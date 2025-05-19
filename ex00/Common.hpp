@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 14:57:26 by esellier          #+#    #+#             */
-/*   Updated: 2025/05/09 19:03:37 by esellier         ###   ########.fr       */
+/*   Updated: 2025/05/19 21:15:16 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,18 @@
 #include <climits>
 #include <cfloat>
 #include <cstdlib>
+#include <sstream>
+#include <iomanip>
+#include <cmath>
 
 void	doChar(char c);
-void	doInt(int i, int len);
-void	doFloat(std::string value, int len);
-void	doDouble(std::string value, int len);
+void	doInt(int i);
+void	doFloat(std::string value);
+void	doDouble(std::string value);
 
 bool	checkInt(std::string value, int len);
 bool	intLimits(long l);
+bool    checkSpecialValue(std::string value);
 bool	checkDecimal(std::string value, int len);
 bool	floatLimits(double d);
 bool	doubleLimits(std::string value);
