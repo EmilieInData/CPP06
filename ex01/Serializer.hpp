@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 14:57:26 by esellier          #+#    #+#             */
-/*   Updated: 2025/05/19 21:11:02 by esellier         ###   ########.fr       */
+/*   Updated: 2025/05/20 15:10:11 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@
 class Serializer
 {
 	public:
-		static bool	convert(std::string value);
+		static uintptr_t	serialize(Data* ptr);
+		static Data*		deserialize(uintptr_t raw);
 	
 	private:
 		Serializer();

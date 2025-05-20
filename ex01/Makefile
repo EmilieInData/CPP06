@@ -2,7 +2,7 @@ NAME = Cast
 
 CC = c++
 
-FLAGS = -Wall -Wextra -Werror -MMD -MP -std=c++98 -pedantic -fsanitize=address -fsanitize=leak
+FLAGS = -Wall -Wextra -Werror -MMD -MP -std=c++98 -pedantic #-fsanitize=address -fsanitize=leak
 
 HEADER = Serializer.hpp Common.hpp
 

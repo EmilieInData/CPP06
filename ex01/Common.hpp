@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 14:57:26 by esellier          #+#    #+#             */
-/*   Updated: 2025/05/19 21:13:34 by esellier         ###   ########.fr       */
+/*   Updated: 2025/05/20 15:50:54 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,13 @@
 
 #include <iostream>
 #include <string>
-#include <cctype>
-#include <climits>
-#include <cfloat>
-#include <cstdlib>
-#include <sstream>
-#include <iomanip>
-#include <cmath>
+#include <stdint.h>
 
+struct Data
+{
+    int         i;
+    double      d;
+    std::string s;
+};
+
+#endif
