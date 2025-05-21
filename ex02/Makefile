@@ -2,12 +2,12 @@ NAME = Cast
 
 CC = c++
 
-FLAGS = -Wall -Wextra -Werror -MMD -MP -std=c++98 -pedantic -fsanitize=address -fsanitize=leak
+FLAGS = -Wall -Wextra -Werror -MMD -MP -std=c++98 -pedantic #-fsanitize=address -fsanitize=leak
 
-HEADER = ScalarConverter.hpp Common.hpp
+HEADER = Base.hpp Common.hpp
 
 SRC = 	main.cpp \
-		ScalarConverter.cpp \
+		Base.cpp  \
 		Common.cpp
 
 OBJDIR = Build
