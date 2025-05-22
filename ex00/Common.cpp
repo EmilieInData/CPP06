@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScalarConverter copy.cpp                           :+:      :+:    :+:   */
+/*   Common.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 16:00:58 by esellier          #+#    #+#             */
-/*   Updated: 2025/05/21 19:49:15 by esellier         ###   ########.fr       */
+/*   Updated: 2025/05/22 15:10:11 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,10 @@ void	doChar(char c)
 	else
 		std::cout << GREEN << "'" << c << "'" << "\n";
 	std::cout << PURPLE << "int: " << GREEN << i << "\n"
-			  << PURPLE << std::fixed << std::setprecision(1) << "float: " << GREEN << f << "f" << "\n"
-			  << PURPLE << std::fixed << std::setprecision(1) << "double: " << GREEN << d << "\n";
+			  << PURPLE << std::fixed << std::setprecision(1) << "float: "
+			  << GREEN << f << "f" << "\n"
+			  << PURPLE << std::fixed << std::setprecision(1) << "double: "
+			  << GREEN << d << "\n" << RESET;
 	return;	
 }
 
@@ -43,8 +45,10 @@ void	doInt(int i)
 	
 	printChar(i);
 	std::cout << PURPLE << "int: " << GREEN << i << "\n"
-			  << PURPLE << std::fixed << std::setprecision(1) << "float: " << GREEN << f << "f" << "\n"
-			  << PURPLE << std::fixed << std::setprecision(1) << "double: " << GREEN << d << "\n";
+			  << PURPLE << std::fixed << std::setprecision(1) << "float: "
+			  << GREEN << f << "f" << "\n"
+			  << PURPLE << std::fixed << std::setprecision(1) << "double: "
+			  << GREEN << d << "\n" << RESET;
 	return;	
 }
 
@@ -57,8 +61,10 @@ void	doFloat(std::string value)
 	f = static_cast<float>(d);
 	printChar(f);
 	printInt(f);
-	std::cout << PURPLE << std::fixed << std::setprecision(1) << "float: " << GREEN << f << "f" << "\n"
-			  << PURPLE << std::fixed << std::setprecision(1) << "double: " << GREEN << d << "\n";
+	std::cout << PURPLE << std::fixed << std::setprecision(1) << "float: "
+			  << GREEN << f << "f" << "\n"
+			  << PURPLE << std::fixed << std::setprecision(1) << "double: "
+			  << GREEN << d << "\n" << RESET;
 	return;	
 }
 
@@ -70,7 +76,8 @@ void	doDouble(std::string value)
 	printChar(d);
 	printInt(d);
 	printFloat(d);
-	std::cout << PURPLE << std::fixed << std::setprecision(1) << "double: " << GREEN << d << "\n";
+	std::cout << PURPLE << std::fixed << std::setprecision(1) << "double: "
+			  << GREEN << d << "\n" << RESET;
 	return;	
 }
 

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 16:00:58 by esellier          #+#    #+#             */
-/*   Updated: 2025/05/21 21:32:37 by esellier         ###   ########.fr       */
+/*   Updated: 2025/05/22 19:10:19 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void    identify(Base* p)
 	else if (dynamic_cast<C*>(p))
 		std::cout << GREEN << "C\n";
 	else
-		std::cout << GREEN << "Unknow\n";
+		std::cout << GREEN << "Unknown\n";
 	return;
 }
 
@@ -74,6 +74,6 @@ void    identify(Base& p)
 		return;
 	}
 	catch (...){}
-	std::cout << GREEN << "Unknow\n";
+	std::cout << GREEN << "Unknown\n";
 	return ;
 }

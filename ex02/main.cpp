@@ -6,16 +6,23 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 15:44:12 by esellier          #+#    #+#             */
-/*   Updated: 2025/05/21 21:34:12 by esellier         ###   ########.fr       */
+/*   Updated: 2025/05/22 15:13:38 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Common.hpp"
 #include "Base.hpp"
 
-int main()
+int main(int ac, char **av)
 {
 	srand(time(NULL));
+	
+	(void)av;
+	if (ac != 1)
+	{
+		std::cerr << ERROR << PINK << "Error, no argument required\n" << RESET;
+		return (1);
+	}
 	
 	A		classA;
 	B		classB;
